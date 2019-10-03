@@ -1,0 +1,556 @@
+/*main settings*/
+body
+{
+
+	margin: 0;
+	padding: 0;
+
+}
+
+
+.container
+{
+
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+
+/*header*/
+.header
+{
+
+	background-image: url(img/base.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+}
+
+
+.menu
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 25px;
+
+}
+
+.nav
+{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.nav p
+{
+
+	margin-right: 30px;
+	color: #fff;
+
+}
+
+.header-content
+{
+
+	display: flex;
+	justify-content: flex-end;
+
+	margin-top: 200px;
+	padding-bottom: 200px;
+	margin-right: 50px;
+
+}
+
+.header-content h2
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #FDE428;
+	text-decoration: underline;
+
+}
+
+.header-content h2:hover
+{
+
+	cursor: pointer;
+
+}
+
+.header-content h1
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+
+}
+
+.title
+{
+
+	position: absolute;
+	text-align: right;
+	transform: translateX(-220px) translateY(60px);
+
+}
+
+.subtitle
+{
+	
+	position: absolute;
+	text-align: right;
+	transform: translateX(-220px) translateY(255px);
+
+}
+
+/*take*/
+.take
+{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+}
+
+
+.take-text
+{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 40%;
+
+}
+
+.take-text h2
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #002E5B;
+	font-size: 30px;
+	font-weight: 500;
+
+}
+
+.take-text h3
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #666666;
+	font-size: 20px;
+	font-weight: 400;
+
+}
+
+.take-text p
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 400;
+
+}
+
+.take-text a
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #002E5B;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: underline;
+
+}
+
+.take-text a:hover
+{
+
+	cursor: pointer;
+
+}
+
+
+/*graf*/
+
+
+.sect3
+{
+
+	background-color: #F4F4F4;
+	padding-top: 90px;
+	padding-bottom: 90px;
+
+}
+
+.graf
+{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.graf-text
+{
+
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.graf-text h2
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #002E5B;
+	font-size: 30px;
+	font-weight: 500;
+
+}
+
+.graf-text h3
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #666666;
+	font-size: 18px;
+	font-weight: 400;
+
+}
+
+.graf-text p
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #333333;
+	font-size: 14px;
+	font-weight: 400;
+
+}
+
+.graf-text a
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #002E5B;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: underline;
+
+}
+
+.graf-text a:hover
+{
+
+	cursor: pointer;
+
+}
+
+/*contactnow*/
+
+.sect4
+{
+
+	background-color: #002E5B;
+
+}
+
+.contactnow
+{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.contactnow-text h2
+{
+	
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 400;
+
+}
+
+.contactnow-button button
+{
+
+	outline: none;
+	border: none;
+	font-size: 16px;
+	color: #000;
+	background-color: #FDE428;
+	padding: 12px 25px;
+
+}
+
+.contactnow-button button:hover
+{
+
+	cursor: pointer;
+
+}
+
+
+/*services*/
+
+.sect5
+{
+
+	padding-top: 85px;
+	padding-bottom: 50px;
+
+}
+
+.services-title
+{
+
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.services-title h2
+{
+
+	color: #002E5B;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+
+
+}
+
+.services-title p
+{
+
+	color: #666666;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+
+}
+
+.services-content
+{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+
+}
+
+.services-item
+{
+
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 30px;
+
+}
+
+.services-item-title h2
+{
+
+	font-weight: 400;
+	font-size: 20px;
+
+}
+
+.services-item-descript p
+{
+
+	font-weight: 300;
+	font-size: 16px;
+
+}
+
+/*counter*/
+
+.sect6
+{
+
+	background-color: #002E5B;
+	padding-top: 90px;
+	padding-bottom: 90px;
+
+}
+
+.counter
+{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.counter-item
+{
+
+	text-align: center;
+	color: #ffffff;
+
+}
+
+.counter-item h2
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 48px;
+	font-weight: 400;
+
+}
+
+.counter-item p
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+
+}
+
+
+
+/*consult*/
+
+.consult
+{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.consult-text
+{
+
+	width: 45%;
+
+}
+
+.consult-text h2
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #002E5B;
+	font-size: 30px;
+	font-weight: 400;
+
+}
+
+.consult-text h3
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #666666;
+	font-size: 20px;
+	font-weight: 300;
+
+}
+
+.consult-text p
+{
+
+	font-family: 'Montserrat', sans-serif;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 300;
+
+}
+
+.consult-text a
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #002E5B;
+	font-weight: 500;
+	text-decoration: underline;
+
+}
+
+.consult-text a:hover
+{
+
+	cursor: pointer;
+
+}
+
+
+/*qoute*/
+
+.sect8
+{
+
+	background-color: #002E5B;
+
+}
+
+.quote
+{
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.quote h2
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 48px;
+	color: #fff;
+	font-weight: 700;
+
+}
+
+.quote h3
+{
+	
+	display: block;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 400;
+	width: 50%;
+
+}
+
+.quote p
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 400;
+
+}
+
+
+
