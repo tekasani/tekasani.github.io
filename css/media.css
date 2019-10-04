@@ -10,6 +10,43 @@
 }
 
 
+.header-content img
+{
+
+	display: none;
+
+}
+
+.header-content
+{
+
+	margin-top: 50px;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.title
+{
+
+	transform: translateX(0px) translateY(0px);
+	text-align: left;
+	position: static;
+	padding-bottom: 70px;
+
+}
+
+.subtitle
+{
+	
+	transform: translateX(0px) translateY(180px);
+	
+	position: static;
+	display: none;
+
+}
+
 .gumb
 {
 
@@ -331,6 +368,62 @@
 
 	width: 100%;
 	margin-top: 50px;
+	-ms-align-items: center;
+	align-items: center;
+
+}
+
+.contactnow-text h2
+{
+
+	font-size: 16px;
+	font-weight: 300;
+
+}
+
+.contactnow-button button
+{
+
+	font-size: 10px;
+
+}
+
+}
+
+
+
+@media(max-width: 450px)
+{
+
+.container
+{
+
+	max-width: 300px;
+	margin: 0 auto;
+
+}
+
+.header-content
+{
+
+	margin-right: 0px;
+
+}
+
+.title
+{
+
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+
+}
+
+.services-item-img img
+{
+
+	width: 280px;
+	height: 150px;
 
 }
 
