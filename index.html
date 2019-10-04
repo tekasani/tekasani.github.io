@@ -5,15 +5,30 @@
 	<title>Consel</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+
+
+		<div class="m-menu">
+			<div class="close-menu">&times;</div>
+			<p>ABOUT</p>
+			<p>SERVICES</p>
+			<p>WHY WE BEST</p>
+			<p>TESTIMONIALS</p>
+			<p>CONTACT</p>
+			<p>ENG</p>
+		</div>	
 	
 	<div class="header">
 		<div class="container">
 			<div class="menu">	
 				<div class="logo">
 					<img src="img/Logo.png" alt="">
+				</div>
+				<div class="gumb">
+					<img src="img/gumb.png" alt="" style="height: 50px; width: 50px;">
 				</div>
 				<div class="nav">
 					<div class="nav-item">
@@ -126,17 +141,6 @@
 						<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
 					</div>
 				</div>
-				<div class="services-item">
-					<div class="services-item-img">
-						<img src="img/icon3.png" alt="">
-					</div>
-					<div class="services-item-title">
-						<h2>AUDIT & ASSURANCE</h2>
-					</div>
-					<div class="services-item-descript">
-						<p>Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.</p>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -190,6 +194,30 @@
 		</div>
 	</div>
 </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+
+<script>
+	
+	$(function() {
+		var link = $('.gumb');
+		var menu = $('.m-menu');
+		var close = $('.close-menu');
+
+		link.on('click', function(event) {
+			event.preventDefault();
+			menu.toggleClass('m-menu-active');
+		});
+
+		close.on('click', function(event) {
+			event.preventDefault();
+			menu.toggleClass('m-menu-active');
+		});
+
+	});
+
+</script>
 
 </body>
 </html>

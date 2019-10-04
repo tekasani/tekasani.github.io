@@ -1,0 +1,337 @@
+@media(max-width: 1000px)
+{
+
+.container
+{
+
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+
+.gumb
+{
+
+	display: block;
+	margin-top: 25px;
+
+}
+
+.nav
+{
+
+	display: none;
+
+}
+
+
+
+.take-text
+{
+
+	width: 100%;
+	padding: 90px 0px;
+
+}
+
+.take-text h2
+{
+
+	font-size: 24px;
+
+}
+
+.take-text h3
+{
+
+	font-size: 16px;
+
+}
+
+.take-text p
+{
+
+	font-size: 14px;
+
+}
+
+.take-text a
+{
+
+	font-size: 14px;
+
+}
+
+.take-image img
+{
+
+	display: none;
+
+}
+
+
+
+.graf
+{
+
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.graf-text
+{
+
+	width: 100%;
+
+}
+
+.graf-text h2
+{
+
+	font-size: 24px;
+
+}
+
+.graf-text h3
+{
+
+	font-size: 16px;
+
+}
+
+.graf-text p
+{
+
+	font-size: 14px;
+
+}
+
+.graf-text a
+{
+
+	font-size: 14px;
+
+}
+
+.graf-img
+{
+
+	display: none;
+
+}
+
+
+.contactnow-text h2
+{
+
+	font-size: 16px;
+
+}
+
+.contactnow-button button
+{
+
+	font-size: 14px;
+	padding: 6px 12px;
+
+}
+
+
+
+.services-title h2
+{
+
+	font-size: 24px;
+
+}
+
+.services-title p
+{
+
+	font-size: 16px;
+
+}
+
+.services-item
+{
+
+	width: 55%;
+	margin-top: 50px;
+
+}
+
+
+.sect6
+{
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+
+.counter-item
+{
+
+	width: 50%;
+
+}
+
+.counter-item h2
+{
+
+	font-size: 24px;
+
+}
+
+.counter-item p
+{
+
+	font-size: 14px;
+
+}
+
+
+
+.consult-text
+{
+
+	width: 100%;
+	padding: 90px 0px;
+
+}
+
+.consult-img
+{
+
+	display: none;
+
+}
+
+.consult-text h2
+{
+
+	font-size: 24px;
+
+}
+
+.consult-text h3
+{
+
+	font-size: 16px;
+
+}
+
+.consult-text p
+{
+
+	font-size: 14px;
+
+}
+
+.consult-text a
+{
+
+	font-size: 14px;
+
+}
+
+
+
+.quote h2
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+
+}
+
+.quote h3
+{
+	
+	display: block;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+	width: 50%;
+
+}
+
+.quote p
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 400;
+
+}
+
+}
+
+
+
+@media(max-width: 850px)
+{
+
+.container
+{
+
+	max-width: 600px;
+	margin: 0 auto;
+
+}
+
+
+.services-item
+{
+
+	width: 80%;
+	margin-top: 50px;
+
+}
+
+}
+
+
+@media(max-width: 650px)
+{
+
+.container
+{
+
+	max-width: 500px;
+	margin: 0 auto;
+
+}
+
+}
+
+
+
+@media(max-width: 550px)
+{
+
+.container
+{
+
+	max-width: 400px;
+	margin: 0 auto;
+
+}
+
+.services-item
+{
+
+	width: 100%;
+	margin-top: 50px;
+
+}
+
+}
