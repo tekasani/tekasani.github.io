@@ -7,23 +7,47 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
+
+	<script
+  src="https://code.jquery.com/jquery-1.7.1.min.js"
+  integrity="sha256-iBcUE/x23aI6syuqF7EeT/+JFBxjPs5zeFJEXxumwb0="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	 $(document).ready(function(){
+	    $("#menu").on("click","a", function (event) {
+	        event.preventDefault();
+	        var id  = $(this).attr('href'),
+	            top = $(id).offset().top;
+	        $('body,html').animate({scrollTop: top}, 500);
+	    });
+
+
+	    $("#m-menu").on("click","a", function (event) {
+	        event.preventDefault();
+	        var id  = $(this).attr('href'),
+	            top = $(id).offset().top;
+	        $('body,html').animate({scrollTop: top}, 500);
+	    });
+	});
+</script>
 </head>
 <body>
 
 
-		<div class="m-menu">
+		<div class="m-menu" id="m-menu">
 			<div class="close-menu">&times;</div>
-			<p>ABOUT</p>
-			<p>SERVICES</p>
-			<p>WHY WE BEST</p>
-			<p>TESTIMONIALS</p>
-			<p>CONTACT</p>
+			<p><a href="#about">ABOUT</a></p>
+			<p><a href="#serv">SERVICES</a></p>
+			<p><a href="#best">WHY WE BEST</a></p>
+			<p><a href="#testim">TESTIMONIALS</a></p>
+			<p><a href="#contact">CONTACT</a></p>
 			<p>ENG</p>
 		</div>	
 	
 	<div class="header">
 		<div class="container">
-			<div class="menu">	
+			<div class="menu" id="menu">	
 				<div class="logo">
 					<img src="img/Logo.png" alt="">
 				</div>
@@ -32,19 +56,19 @@
 				</div>
 				<div class="nav">
 					<div class="nav-item">
-						<p>ABOUT</p>
+						<p><a href="#about">ABOUT</a></p>
 					</div>
 					<div class="nav-item">
-						<p>SERVICES</p>
+						<p><a href="#serv">SERVICES</a></p>
 					</div>
 					<div class="nav-item">
-						<p>WHY WE BEST</p>
+						<p><a href="#best">WHY WE BEST</a></p>
 					</div>
 					<div class="nav-item">
-						<p>TESTIMONIALS</p>
+						<p><a href="#testim">TESTIMONIALS</a></p>
 					</div>
 					<div class="nav-item">
-						<p>CONTACT</p>
+						<p><a href="#contact">CONTACT</a></p>
 					</div>
 					<div class="nav-item">
 						<p>ENG</p>
@@ -66,7 +90,7 @@
 		</div>
 	</div>
 
-<div class="sect2">
+<div class="sect2" id="about">
 	<div class="container">
 		<div class="take">
 			<div class="take-text">
@@ -82,7 +106,7 @@
 	</div>
 </div>
 
-<div class="sect3">
+<div class="sect3" id="serv">
 	<div class="container">
 		<div class="graf">
 			<div class="graf-img">
@@ -98,7 +122,7 @@
 	</div>
 </div>
 
-<div class="sect4">
+<div class="sect4" id="best">
 	<div class="container">
 		<div class="contactnow">
 			<div class="contactnow-text">
@@ -111,7 +135,7 @@
 	</div>
 </div>
 
-<div class="sect5">
+<div class="sect5" id="testim">
 	<div class="container">
 		<div class="services">
 			<div class="services-title">
@@ -147,7 +171,7 @@
 	</div>
 </div>
 
-<div class="sect6">
+<div class="sect6" id="contact">
 	<div class="container">
 		<div class="counter">
 			<div class="counter-item">
@@ -197,12 +221,13 @@
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+
 
 <script>
 	
 	$(function() {
 		var link = $('.gumb');
+		var a = $('a'); 
 		var menu = $('.m-menu');
 		var close = $('.close-menu');
 
@@ -215,6 +240,12 @@
 			event.preventDefault();
 			menu.toggleClass('m-menu-active');
 		});
+
+		a.on('click', function(event) {
+			menu.toggleClass('m-menu-active');
+		});
+
+
 
 	});
 
