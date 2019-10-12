@@ -1,0 +1,73 @@
+*{
+
+	margin: 0;
+	padding: 0;
+
+}
+
+html{
+
+	font-size: 10px;
+
+}
+
+.container{
+
+	width: 1200px;
+	margin: 0 auto;
+
+}
+
+.m-menu {
+
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	text-align:center;
+	font-size: 30px;
+	line-height: 60px;
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
+	transform: translateX(-100%);
+	z-index: 99;
+
+	& a{
+
+		text-decoration: none;
+		color: #fff;
+
+	}	
+
+}
+
+.close-menu{
+
+	font-size: 50px;
+	color: #fff;
+	margin-bottom: 20px;
+
+}
+
+.m-menu-active{
+
+	transform: translateX(-0%);
+
+}
+
+
+
+@import "header.less"; 
+@import "about.less"; 
+@import "ingrideent.less"; 
+@import "menu.less"; 
+@import "reviews.less"; 
+@import "reservation.less"; 
+@import "footer.less"; 
+@import "media.less"; 

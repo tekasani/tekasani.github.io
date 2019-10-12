@@ -1,0 +1,65 @@
+.header {
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.header-menu__burger {
+  display: none;
+}
+.header-menu__burger img {
+  width: 50px;
+  height: 50px;
+}
+.header-menu__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-menu__nav p {
+  padding: 0 10px;
+}
+.header-menu__nav p a {
+  text-decoration: none;
+  font-size: 2.1rem;
+  font-family: 'Gentium Book Basic', serif;
+  color: #fff;
+}
+.header-content {
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 200px;
+}
+.header-content__title {
+  font-size: 6.5rem;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 100px;
+}
+.header-content__buttons button {
+  font-size: 3rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin-left: 40px;
+  padding: 20px 50px;
+}
+.header-content__buttons button:hover {
+  cursor: pointer;
+  border: 2px solid white;
+}
+.header-content__buttons button.bt1 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.header-content__buttons button.bt2 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
