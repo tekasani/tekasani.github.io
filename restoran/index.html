@@ -14,7 +14,7 @@
 <body>
 
 
-<section class="m-menu" id="menu">
+<section class="m-menu" id="m-menu">
 	<div class="close-menu">&times;</div>
 	<p><a href="#home">Home</a></p>
 	<p><a href="#about">About</a></p>
@@ -270,20 +270,20 @@
 	            top = $(id).offset().top;
 	        $('body,html').animate({scrollTop: top}, 700);
 	    });
+
 	});
 </script>
 
 <script>
 	
 	$(function() {
-		
+
 		var link = $('.header-menu__burger');
 		var a = $('a'); 
 		var menu = $('.m-menu');
 		var close = $('.close-menu');
 
 		link.on('click', function(event) {
-			event.preventDefault();
 			menu.toggleClass('m-menu-active');
 		});
 
@@ -293,7 +293,7 @@
 		});
 
 		a.on('click', function(event) {
-			menu.toggleClass('m-menu-active');
+			menu.removeClass('m-menu-active');
 		});
 
 
