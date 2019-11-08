@@ -276,18 +276,8 @@ html{
   height: 100vh;
 
 }
-.menu-mobile_bg {
 
-  width: 3000px;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  z-index: 10;
-  transform: translateX(100%);
-  transition: 0.4s;
-
-}
-.menu-mobile_bg_active {
+tive {
 
   transform: translateX(0%);
 
