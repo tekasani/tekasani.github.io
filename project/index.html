@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ComputerStore</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<!-- menu -->
+	<div class="menu-mobile" id="menu_mobile">
+		<ul>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">contact</a></li>
+			<li><a href="#">cabinet</a></li>
+			<li><a href="#">register</a></li>
+		</ul>
+	</div>	
+	<div class="menu-mobile_bg"></div>
+
+
+	<header class="top-line">
+		<div class="container">
+			<div class="row">
+				<div class="top-logo col-sm-1 col-md-2 col-lg-2 col-1">
+					<img src="img/logo.png" alt="логотип">
+				</div>
+				<div class="top-menu col-sm-8 offset-sm-3 col-md-6 offset-md-4 col-lg-5 offset-lg-5">
+					<p><a href="#">menu</a></p>
+					<p><a href="#">contact</a></p>
+					<p><a href="#">cabinet</a></p>
+					<p><a href="#">register</a></p>
+				</div>
+				<div class="burger col-sm-2 offset-sm-9 col-2 offset-8">
+					<button class="burger_btn">
+						<span class="bu-t"></span>
+						<span class="bu-m"></span>
+						<span class="bu-b"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="content">
+		<div class="container">
+			<div class="row">
+				<div class="content-catalog col-lg-2 col-md-2 col-sm-12">
+					<h2><a href="your_item">Товар 1</a></h2>
+					<h2><a href="your_item">Товар 2</a></h2>
+					<h2><a href="your_item">Товар 3</a></h2>
+				</div>
+				<div class="content-line col-lg-10 col-md-10 col-sm-12">
+					<div class="content-item">
+							<div class="content-item__img">
+								<img src="img/item-img.jpg" alt="">
+							</div>
+							<div class="content-item__desc">
+								<p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad 
+								putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant</p>
+							</div>
+						</div>	
+						<div class="content-item">
+							<div class="content-item__img">
+								<img src="img/item-img.jpg" alt="">
+							</div>
+							<div class="content-item__desc">
+								<p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad 
+								putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant</p>
+							</div>
+						</div>			
+						<div class="content-item">
+							<div class="content-item__img">
+								<img src="img/item-img.jpg" alt="">
+							</div>
+							<div class="content-item__desc">
+								<p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad 
+								putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant</p>
+							</div>
+						</div>
+					</div>				
+				</div>	
+			</div>
+	</section>
+
+	<footer class="bottom-line">
+		<div class="container">
+			<div class="row">
+				<div class="bottom-logo col-sm-12 col-md-2 col-lg-2">
+					<img src="img/logo.png" alt="логотип">
+				</div>
+				<div class="bottom-menu col-sm-12 col-md-6 offset-md-4 col-lg-5 offset-lg-5">
+					<p><a href="#">menu</a></p>
+					<p><a href="#">contact</a></p>
+					<p><a href="#">cabinet</a></p>
+					<p><a href="#">register</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>	
+
+
+
+	<script src="jquery.1.7.1.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+			var menu_mobile = $(".menu-mobile");
+			var burger = $(".burger");
+			var bg = $(".menu-mobile_bg");
+			var div = $("#menu_mobile");			
+
+			burger.on('click', function(event) {
+				menu_mobile.toggleClass('menu-mobile_active');
+				bg.toggleClass('menu-mobile_bg_active');
+			});
+
+		$(document).mouseup(function (e){ // событие клика по веб-документу
+			if($("#menu_mobile").hasClass("menu-mobile_active")){
+				if (!div.is(e.target) && div.has(e.target).length === 0) { // и не по его дочерним элементам
+					menu_mobile.toggleClass('menu-mobile_active');
+					bg.toggleClass('menu-mobile_bg_active');		
+				}
+			}
+});
+});
+</script>	
+
+</body>
+</html>

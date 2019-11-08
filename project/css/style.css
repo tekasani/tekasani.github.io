@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
+
+html{
+
+	font-size: 10px;
+
+}
+
+.top-line{
+
+	background-color: #EFEFEF;
+	padding: 15px 0px;
+
+}
+
+.top-logo img{
+
+	height: 100px;
+	width: 250px;
+
+}
+
+.top-menu{
+
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+
+}
+
+.burger{
+
+	display: none;
+
+}
+
+.top-menu p a{
+	
+	text-decoration: none;
+	color: #000;
+	font-size: 1.8rem;
+	transition: 0.3s;
+	text-transform: uppercase;
+	padding: 0px 10px;	
+
+}
+
+.top-menu p a:hover{
+	
+	text-decoration: underline;
+	color: #6E6E6E;
+
+}
+
+
+
+.content-catalog{
+
+	background-color: #E1DFDF;
+	text-align: center;
+
+}
+
+.content-catalog h2{
+
+	font-size: 1.8rem;
+	color: #000;
+	padding: 20px 0px;
+	text-decoration: none;
+
+}
+
+.content-catalog a{
+
+	color: #000;
+
+}
+
+.content-catalog a:hover{
+
+	color: #000;
+	text-decoration: none;
+
+}
+
+.content-line{
+
+	background-color: #D3D3D3;
+	padding: 20px 0px;
+
+}
+
+.content-item{
+
+	padding: 30px 0px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.content-item__img{
+
+	width: 30%;
+
+}
+
+.content-item__img img{
+
+	width: 200px;
+	height: 150px;
+
+}
+
+.content-item__desc{
+
+		width: 60%;
+
+}
+
+.content-item__desc p{
+
+	font-size: 1.4rem;
+
+}
+
+
+
+/*footer*/
+
+.bottom-line{
+
+	background-color: #EFEFEF;
+	padding: 20px 0px;
+
+}
+
+.bottom-logo img{
+
+	height: 100px;
+	width: 250px;
+
+}
+
+.bottom-menu{
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+
+	transform: translateY(10px);
+
+}
+
+.bottom-menu p{
+
+	padding: 0px 10px;
+
+}
+
+.bottom-menu p a{
+	
+	text-decoration: none;
+	color: #000;
+	font-size: 1.8rem;
+	transition: 0.3s;
+	text-transform: uppercase;
+	padding: 0px 10px;	
+
+}
+
+.bottom-menu p a:hover{
+	
+	text-decoration: underline;
+	color: #6E6E6E;
+
+}
+
+/*menu*/
+
+.burger_btn {
+
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border: none;
+  z-index: 25;
+
+}
+
+.burger_btn .bu-t,
+.burger_btn .bu-m,
+.burger_btn .bu-b {
+
+  display: block;
+  background-color: #fff;
+  width: 30px;
+  height: 3px;
+  margin: 0 auto;
+
+}
+.burger_btn .bu-m {
+
+  margin: 5px 0px;
+  transform: translateX(10px);
+
+}
+.menu-mobile {
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 0vh;
+  z-index: 99;
+  width: 35vh;
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+  transform: translateX(-100%);
+  transition: 0.5s;
+  position: absolute;
+
+}
+.menu-mobile li {
+
+  padding: 10px 0px;
+  padding-left: 20px;
+  list-style: none;
+
+}
+
+.menu-mobile li a{
+
+	color: #000;
+	transition: 0.2s;
+
+}
+.menu-mobile li:hover {
+
+  cursor: pointer;
+
+}
+.menu-mobile ul {
+
+  padding-top: 50px;
+  list-style: none;
+
+}
+.menu-mobile_active {
+
+  transform: translateX(0%);
+  height: 100vh;
+
+}
+.menu-mobile_bg {
+
+  width: 3000px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: 0.4s;
+
+}
+.menu-mobile_bg_active {
+
+  transform: translateX(0%);
+
+}
+
+
+@media (max-width: 768px){
+
+.container{
+
+	max-width: 500px;
+
+}
+
+.top-menu{
+
+	display: none;
+
+}
+
+.burger{
+
+	display: block;
+
+}
+
+.top-logo img{
+
+	height: 50px;
+	width: 125px;
+
+}	
+	
+
+.top-menu p a{
+	
+	text-decoration: none;
+	color: #000;
+	font-size: 1.6rem;
+	transition: 0.3s;
+
+}
+
+.content-item{
+
+	flex-wrap: wrap;
+
+}
+
+.content-item__img{
+
+	width: 100%;
+
+}
+
+.content-item__desc{
+
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+
+}
+
+.content-item__img img{
+
+	display: block;
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+
+}
+
+.bottom-logo img{
+
+	height: 50px;
+	width: 125px;
+
+}	
+
+
+.bottom-menu p a{
+	
+	text-decoration: none;
+	color: #000;
+	font-size: 1.4rem;
+	transition: 0.3s;
+
+}
+
+.bottom-menu{
+
+	transform: translateY(5px);
+
+}
+
+.bottom-menu{
+
+	flex-direction: column;
+	margin-top: 20px;
+
+}	
+
+.bottom-logo img{
+
+	display: block;
+	margin: 0 auto;
+
+}
+
+}
+
+
+@media (max-width: 600px){
+
+.container{
+
+	max-width: 400px;
+
+}
+
+.content-item__img img{
+
+	display: block;
+	width: 200px;
+	height: 130px;
+	margin: 0 auto;
+
+}
+
+}	
